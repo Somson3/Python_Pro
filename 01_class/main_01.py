@@ -1,6 +1,25 @@
 import Goods
 import Shopper
 import Zakaz
+import logging
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+formatter = logging.Formatter('%(asctime)s %(name)-12s %(levelname)-8s %(message)s')
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG)
+console_handler.setFormatter(formatter)
+
+file_handler = logging.FileHandler('main_01.py')
+file_handler.setLevel(logging.INFO)
+file_handler.setFormatter(formatter)
+
+logger.addHandler(console_handler)
+logger.addHandler(file_handler)
+
+
+
 
 x_1 = Goods.Goods('banana', 40, 'good banana', '1x2x3')
 x_2 = Goods.Goods('milk', 25, 'good milk', '3')

@@ -12,7 +12,7 @@ class Group:
         self.students = []
         logger.info(f'Create new group {self.title}')
 
-    def add_student(self, student.student: Student):
+    def add_student(self, student: Student):
         if not isinstance(student, Student):
             raise TypeError
         if len(self.students) == self.limit:
