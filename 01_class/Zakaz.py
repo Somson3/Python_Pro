@@ -1,6 +1,7 @@
 import Goods
 import Shopper
 
+
 class Zakaz:
 
     def __init__(self, shoper):

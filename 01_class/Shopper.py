@@ -8,4 +8,4 @@ class Shopper:
         self.type = 'shopper'
 
     def __str__(self):
-        return f'{self.surname} - {self.name} {self.phone_number} {self.dimensions_of_the_product}.'
+        return f'{self.surname} - {self.name}  {self.dimensions_of_the_product}.'
